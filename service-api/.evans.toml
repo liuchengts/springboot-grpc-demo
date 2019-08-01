@@ -1,0 +1,6 @@
+[default]
+protoPath = ["src/main/proto"]
+protoFile = ["helloWorld.proto"]
+package = "com.lc.grpc.service"
+service = "HelloWorld"
+

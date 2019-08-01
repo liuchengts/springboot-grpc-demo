@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+//这个包路径要是当前工程存在的一个包路径
+package com.lc.grpc.service;
+//必须是true 声明的服务才能创建
+option java_multiple_files = true;
+option java_outer_classname = "HelloWorldProto";
+
+// 服务声明
+service HelloWorld {
+    // 服务方法声明
+    rpc Hello (HelloWorldRequest) returns (HelloWorldReply) {
+    }
+}
+
+// 入参声明
+message HelloWorldRequest {
+    string name = 1;
+}
+
+// 出参声明
+message HelloWorldReply {
+    string message = 1;
+}
+
+message RpcRequest {
+    string namespace = 1;
+    string apiName = 2;
+    bytes params = 3;
+}
+
+message RpcResponse {
+    bytes result = 1;
+    bytes exception = 2;
+}
