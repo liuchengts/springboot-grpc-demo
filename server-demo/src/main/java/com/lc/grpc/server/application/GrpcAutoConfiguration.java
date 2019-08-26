@@ -1,10 +1,7 @@
 package com.lc.grpc.server.application;
 
-import com.lc.grpc.service.HelloWorldGrpc;
-import com.lc.grpc.service.client.HelloWorldServiceClient;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
@@ -29,10 +26,5 @@ public class GrpcAutoConfiguration {
     @PreDestroy
     public void shutdown() throws InterruptedException {
         channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
-    }
-
-    @Bean
-    public HelloWorldServiceClient helloWorldServiceClient() {
-        return new HelloWorldServiceClient(HelloWorldGrpc.newBlockingStub(channel));
     }
 }
