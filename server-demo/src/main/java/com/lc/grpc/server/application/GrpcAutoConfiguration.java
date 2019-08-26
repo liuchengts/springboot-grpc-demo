@@ -1,4 +1,4 @@
-package com.lc.grpc.service.application;
+package com.lc.grpc.server.application;
 
 import com.lc.grpc.HelloWorldGrpc;
 import com.lc.grpc.service.client.HelloWorldServiceClient;
