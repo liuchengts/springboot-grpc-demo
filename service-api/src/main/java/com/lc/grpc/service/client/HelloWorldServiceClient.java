@@ -1,7 +1,7 @@
 package com.lc.grpc.service.client;
 
-import com.lc.grpc.HelloWorldGrpc;
-import com.lc.grpc.HelloWorldRequest;
+import com.lc.grpc.service.HelloWorldGrpc;
+import com.lc.grpc.service.HelloWorldRequest;
 import com.lc.grpc.service.HelloWorldService;
 
 /**

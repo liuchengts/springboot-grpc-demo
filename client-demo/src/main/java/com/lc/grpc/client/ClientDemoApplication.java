@@ -1,6 +1,6 @@
 package com.lc.grpc.client;
 
-import com.lc.grpc.server.application.GrpcAutoConfiguration;
+import com.lc.grpc.client.application.GrpcAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

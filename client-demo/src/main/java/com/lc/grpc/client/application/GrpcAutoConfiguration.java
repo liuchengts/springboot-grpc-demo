@@ -1,6 +1,6 @@
 package com.lc.grpc.client.application;
 
-import com.lc.grpc.HelloWorldGrpc;
+import com.lc.grpc.service.HelloWorldGrpc;
 import com.lc.grpc.service.client.HelloWorldServiceClient;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;

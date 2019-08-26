@@ -1,4 +1,4 @@
-package com.lc.grpc.server;
+package com.lc.grpc.server.application;
 
 import io.grpc.health.v1.HealthCheckRequest;
 import io.grpc.health.v1.HealthCheckResponse;
